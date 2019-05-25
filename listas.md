@@ -1,5 +1,5 @@
 # Listas
-Las listas es Python es una estructura y un tipo de datos, es similar a los arreglos de otros lenguajes de programación (C++, Java,etc). Ésta nos permite almacenar elementos de distintos tipos.
+Las listas es Python es una estructura de dato, es similar a los arreglos de otros lenguajes de programación (C++, Java,etc). Ésta nos permite almacenar elementos de distintos tipos.
 ```Python
 x=[1,'2',[3,4],5.0] #lista con elementos enteros, cadenas de texto, flotantes e incluso tiene una lista dentro de esta
 ```
