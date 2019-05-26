@@ -19,7 +19,7 @@ for x in tupla:
 Para acceder a sus elementos, indicamos el indice en que se encuentra el elemento.
 ```Python
 tupla[0]    #1
- tupla[1:]  #(2, 'tres', 4.0)
+tupla[1:]  #(2, 'tres', 4.0)
 ```
 Si deseamos saber si un elemento existe en una lista, podemos hacerlo con un condicional.
 ```Python
