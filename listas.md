@@ -52,4 +52,5 @@ x.reverse()
 print(x)    #[1, 1, 11, 10, [7, 8], 6, 5.0, [3, 4], '2', 1]
 ```
 ***
-Referencia: https://devcode.la/tutoriales/listas-python/
+Referencias: 
+- https://devcode.la/tutoriales/listas-python/
