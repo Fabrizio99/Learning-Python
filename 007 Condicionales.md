@@ -54,3 +54,6 @@ Si solo se tiene un enunciado con solo un if y un else, podemos indicarlo en una
 print('12 es mayor que 30') if 12>30 else print('12 es menor que 30')
 # 12 es menor que 30
 ```
+***
+Referencias:
+- https://www.w3schools.com/python/python_conditions.asp
