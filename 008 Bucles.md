@@ -52,6 +52,96 @@ while i<10:
 # 9
 # 10
 ```
+## for
+Este bucle es utilizado para iterar sobre una secuencia como listas, tuplas, diccionarios, conjuntos o cadenas de texto.
+Este tipo de bucle no es similar al bucle `for` que existe en otro lenguajes de programación como C++, Java.
+```Python
+lista=[1,2,3,4,5]
+for x in lista:
+    print(x)
+
+# 1
+# 2
+# 3
+# 4
+# 5
+```
+Podemos hacer lo mismo con las cadenas de texto.
+```Python
+for x in 'python':
+    print(x)
+
+# p
+# y
+# t
+# h
+# o
+# n
+```
+**Nota**    
+Podemos usar las instrucciones `break` y `continue` en el bucle for.
+```Python
+paises=['peru','argentina','chile','brasil']
+for x in paises:
+    print(x)
+    if x=='chile':
+        break
+# peru
+# argentina
+# chile
+
+for x in paises:
+    if x=='chile':
+        continue
+    print(x)
+# peru
+# argentina
+# brasil
+```
+### range()
+Es una función que retorna una secuencia de números, comenzando desde cero incrementandose en 1 y termina en un determinado número (indicado como parámetro).
+```Python
+for x in range(10):
+    print(x)
+
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+```
+Podemos cambiarle el valor inicial e incremento de la secuencia.
+```Python
+# Estructura
+range(valorInicial,valorFinal,incremento)
+
+# Ejemplo
+for x in range(3,11,2):
+    print(x)
+# 3
+# 5
+# 7
+# 9
+```
+### else
+Podemos usar la palabra clave `else` en este tipo de bucle para indicar que se ejecute una instrucción cuando el bucle finalice.
+```Python
+for x in range(5):
+    print(x)
+else:
+    print('Números del 0 al 4')
+# 0
+# 1
+# 2
+# 3
+# 4
+# Números del 0 al 4
+```
 ***
 Referencias:
 - https://www.w3schools.com/python/python_while_loops.asp
