@@ -54,6 +54,21 @@ Si solo se tiene un enunciado con solo un if y un else, podemos indicarlo en una
 print('12 es mayor que 30') if 12>30 else print('12 es menor que 30')
 # 12 es menor que 30
 ```
+## Operadores lógicos *or* y *and*
+Estos operadores nos permiten combinar enunciados en la condicion.
+```Python
+# con el operador and, ambos enunciados tiene que ser verdaderos para que la condicion sea verdadera
+if 12>2 and 40>1:
+    print('ambos enunciados son verdaderos')
+
+# ambos enunciados son verdaderos
+
+# con el operador or, uno de ellos tiene que ser verdadero para que la condicion sea verdadera
+if 12>20 or 2>1:
+    print('uno de ellos es verdadero')
+
+# uno de ellos es verdadero
+```
 ***
 Referencias:
 - https://www.w3schools.com/python/python_conditions.asp
