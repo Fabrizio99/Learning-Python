@@ -36,3 +36,6 @@ def suma(numero1,numero2):
 
 print(suma(1,2))    # 3
 ```
+***
+Referencias:
+- https://www.w3schools.com/python/python_functions.asp
