@@ -20,3 +20,19 @@ print('Soy de '+pais)
 mensaje('Peru')         # Soy de Peru
 mensaje('Inglaterra')   # Soy de Inglaterra
 ```
+### Valor de parámetro por defecto
+Si llamamos a una función sin parámetro, nos va a permitir usar el valor por defecto.
+```Python
+def imprimirDatosTrabajador(nombre, salario=1000):
+    print('Nombre:',nombre,', sueldo:',salario)
+
+imprimirDatosTrabajador('Fabrizio') # Nombre: Fabrizio , sueldo: 1000
+```
+## Retornar un valor
+La palabra clave `return` permite retornar un valor en una función.
+```Python
+def suma(numero1,numero2):
+    return numero1+numero2  # retornara el valor de la suma de numero1 y numero2
+
+print(suma(1,2))    # 3
+```
