@@ -23,7 +23,7 @@ max(lista, key=lambda x: int(x))    #'25'
 **Explicación:**
 Definimos a `key` como una función lambda, donde toma el parámetro `x` y este transformara a `x` en un tipo de dato entero, permitiendo que se haga una comparación de cada elemento de la lista en su tipo entero.
 ## Ordenamiento
-Existen el método `.sort()` y la función ``sorted()` que cumplen con el mismo objetivo de ordenar una lista, la diferencia es que el método modifica la lista original y la función crea una nueva lista con los elementos ordenados.
+Existen el método `.sort()` y la función `sorted()` que cumplen con el mismo objetivo de ordenar una lista, la diferencia es que el método modifica la lista original y la función crea una nueva lista con los elementos ordenados.
 ```Python
 # metodo sort() modifica la lista original 
 lista=[5,4,6,3,1]
@@ -48,7 +48,7 @@ lista   #['abc', 'abcdef', 'ab']
 ```
 Usamos la palabra `key` como funa función lambda, donde evaluaremos el ordenamiento de la lista de acuerdo a la longitud de cada elemento.
 ## `translate()`
-Función que crea un nuevo `String` pudiendose reemplazar los valores de cada caracter.
+Función que crea un nuevo `String` pudiendose reemplazar los valores de cada caracter.  
 En la tabla de traducción, se debe indicar indicar el caracter que se desea cambiar y el valor que va a tomar, pero se realiza de la siguiente manera.
 - Ordinal Unicode del caracter a cambiar -> el Ordinal Unicode del nuevo valor.
 - Ordinal Unicode del caracter a cambiar -> la letra misma del nuevo valor.
