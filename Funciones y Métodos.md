@@ -57,41 +57,41 @@ En la tabla de traducción, se debe indicar indicar el caracter que se desea cam
 La tabla de traducción se crea usando la función `maketrans()` o hacerlo manualmente mediante diccionarios.
 La función `maketrans()` puede tomar hasta 3 argumentos.
 - Si solo tiene **1 argumento**, esta debe ser un diccionario donde se indique el Ordinal Unicode hacia otro Ordinal Unicode, `String` o `None`.
-```Python
-# de ordinal Unicode hacia ordinal Unicode
-cadena = "abcdef"
-traduccion = cadena.maketrans({ord('a') : ord('A')})
-nuevaCadena = cadena.translate(traduccion)
-nuevaCadena #'Abcdef'
+    ```Python
+    # de ordinal Unicode hacia ordinal Unicode
+    cadena = "abcdef"
+    traduccion = cadena.maketrans({ord('a') : ord('A')})
+    nuevaCadena = cadena.translate(traduccion)
+    nuevaCadena #'Abcdef'
 
-# de ordinal Unicode hacia String
-cadena = "abcdef"
-traduccion = cadena.maketrans({ord('a') : 'A'})
-nuevaCadena = cadena.translate(traduccion)
-nuevaCadena #'Abcdef'
+    # de ordinal Unicode hacia String
+    cadena = "abcdef"
+    traduccion = cadena.maketrans({ord('a') : 'A'})
+    nuevaCadena = cadena.translate(traduccion)
+    nuevaCadena #'Abcdef'
 
-# de ordinal Unicode hacia None
-cadena = "abcdef"
-traduccion = cadena.maketrans({ord('a') : None})    # None permite eliminar el caracter
-nuevaCadena = cadena.translate(traduccion)
-nuevaCadena #'bcdef'
-```
+    # de ordinal Unicode hacia None
+    cadena = "abcdef"
+    traduccion = cadena.maketrans({ord('a') : None})    # None permite eliminar el caracter
+    nuevaCadena = cadena.translate(traduccion)
+    nuevaCadena #'bcdef'
+    ```
 Para entender más del método `ord` visitar [ord()](https://www.programiz.com/python-programming/methods/built-in/ord)
 
 - Si se tiene **2 argumentos**, estos deben ser de tipo `String` de igual longitud. Cada caracter en la posicion "x" de la primera cadena será reemplazado por el caracter en la posición "x" de la segunda cadena.
-```Python
-cadena="pythom"
-traduccion = cadena.maketrans('pm','Pn')
-nuevaCadena = cadena.translate(traduccion)
-nuevaCadena #'Python'
-```
+    ```Python
+    cadena="pythom"
+    traduccion = cadena.maketrans('pm','Pn')
+    nuevaCadena = cadena.translate(traduccion)
+    nuevaCadena #'Python'
+    ```
 - Si se tiene **3 argumentos**, el tercer argumento es un `String` donde todos sus caracteres pertenecientes se le asignaran a nulo (None).
-```Python
-cadena = "abcde"
-traduccion = cadena.maketrans('ac','AC','ade')
-nuevaCadena = cadena.translate(traduccion)
-nuevaCadena #'bC'
-```
+    ```Python
+    cadena = "abcde"
+    traduccion = cadena.maketrans('ac','AC','ade')
+    nuevaCadena = cadena.translate(traduccion)
+    nuevaCadena #'bC'
+    ```
 Primero `'a'` es reeemplazado por `'A'` y luego este es reemplazado a `None` ya que `a` se encuentra en el tercer argumento, lo mismo pasa con la letra `'c'`. `'d'` y `'e'` también son convertidos a `None` debido a que estos son caracteres del tercer argumento.
 ***
 Referencias:
